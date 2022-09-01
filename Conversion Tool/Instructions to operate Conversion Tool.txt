@@ -1,0 +1,17 @@
+Instructions for Operating Tool "Conversion of Embase Downloaded file"-->>
+Objective : Combine Columns in a Excel File to a single Column named "Combined Info for Embase Abstracts"
+Columns that need to be merge :"Title","Author Names","Source".
+
+1.) Create a New Folder on a Desktop named "New Folder"
+2.) Create a Sub Folder named "Results"
+3.) Save a Tool Python File on a System from where you can access it easily(It all depends on your choices) .
+4.) Copy a file which has to be converted in the "New Folder"
+5.) Run the tool And type the name for the Output File (You will get the Output File with this name) and now See the response 
+6.) Locate the sub folder "Results" and that's done , Your ouput file is ready with the name you provided. :)
+
+
+Note : You need to change the "BASE URL" in the code When Setting up on a new Device/Machine.
+
+
+Developed by Ashwin Saxena 
+Dated : 10 Jun 2020

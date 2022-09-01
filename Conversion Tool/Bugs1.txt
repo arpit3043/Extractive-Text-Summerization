@@ -1,0 +1,2 @@
+Bugs To be Fixed in Pubmed Combining Info
+Remove Space and Comma and put "." after title , And remove space & comma After Authors Name 
