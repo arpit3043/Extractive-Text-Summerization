@@ -1,0 +1,39 @@
+{% extends "summaryapp/layout.html" %}
+{% block content %}
+<!--#### User Page ####-->
+	<div class="row">
+	<!--Generate Summary Button-->
+		<div class="col-lg-3"></div>
+		<div class="col-lg-3"></div>
+		<div class="col-lg-3">
+			<div class="text-right p-3">
+			<a href="{% url 'convert-csv'%}" class="btn btn-dark">Convert CSV</a>	
+			</div>
+		</div>
+		<div class="col-lg-3">
+			<div class="text-right p-3">
+			<a href="{% url 'generate-summary'%}" class="btn btn-dark">Generate New Summary</a>	
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-12">	
+			<!--#### Summary card ####-->
+			{% for summary in summarys %}
+				<div class="col-lg-12 p-3">
+				  <div class="card shadow mb-0 bg-white rounded">
+				    <div class="card-body">
+				      <h5 class="card-title"><b>{{ summary.tittle }}</b></h5>
+				      <p class="card-text">{{ summary.detail}}</p>
+				      <div class="text-right">
+				      <a href="#" class="btn btn-dark" >Read</a>
+				  	  </div>
+				  	</div>
+			  	  </div>
+				</div>
+			{% endfor %}
+		<!--### End Summary card ####-->
+		</div>
+	</div>
+<!--#### End User Page ####-->
+{% endblock %}
